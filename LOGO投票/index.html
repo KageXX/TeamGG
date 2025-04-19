@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGO 投票展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .logo-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo-section h2 {
+            color: #1e88e5;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .image-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+        
+        .image-info {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        
+        .image-info h3 {
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            color: #333;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 0.8rem;
+            }
+            
+            .image-card {
+                max-width: 150px;
+            }
+            
+            .image-info h3 {
+                font-size: 0.8rem;
+            }
+            
+            .logo-section {
+                padding: 1rem;
+            }
+            
+            .logo-section h2 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LOGO 設計展示</h1>
+        <p>創意設計與實物展示</p>
+    </div>
+    
+    <div class="container">
+        <div class="logo-section">
+            <h2>LOGO 設計</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="image/下載.png" alt="LOGO 設計 1">
+                    <div class="image-info">
+                        <h3>LOGO 設計 1</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (1).png" alt="LOGO 設計 2">
+                    <div class="image-info">
+                        <h3>LOGO 設計 2</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (2).png" alt="LOGO 設計 3">
+                    <div class="image-info">
+                        <h3>LOGO 設計 3</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (3).png" alt="LOGO 設計 4">
+                    <div class="image-info">
+                        <h3>LOGO 設計 4</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (4).png" alt="LOGO 設計 5">
+                    <div class="image-info">
+                        <h3>LOGO 設計 5</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (5).png" alt="LOGO 設計 6">
+                    <div class="image-info">
+                        <h3>LOGO 設計 6</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (6).png" alt="LOGO 設計 7">
+                    <div class="image-info">
+                        <h3>LOGO 設計 7</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (7).png" alt="LOGO 設計 8">
+                    <div class="image-info">
+                        <h3>LOGO 設計 8</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (8).png" alt="LOGO 設計 9">
+                    <div class="image-info">
+                        <h3>LOGO 設計 9</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (9).png" alt="LOGO 設計 10">
+                    <div class="image-info">
+                        <h3>LOGO 設計 10</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (10).png" alt="LOGO 設計 11">
+                    <div class="image-info">
+                        <h3>LOGO 設計 11</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (11).png" alt="LOGO 設計 12">
+                    <div class="image-info">
+                        <h3>LOGO 設計 12</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (12).png" alt="LOGO 設計 13">
+                    <div class="image-info">
+                        <h3>LOGO 設計 13</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (13).png" alt="LOGO 設計 14">
+                    <div class="image-info">
+                        <h3>LOGO 設計 14</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (14).png" alt="LOGO 設計 15">
+                    <div class="image-info">
+                        <h3>LOGO 設計 15</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/下載 (15).png" alt="LOGO 設計 16">
+                    <div class="image-info">
+                        <h3>LOGO 設計 16</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-section">
+            <h2>LOGO 實物展示</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="image/1744997680_4adfa4a58bc144f0b28726ee88fcc6be.png" alt="實物展示 1">
+                    <div class="image-info">
+                        <h3>實物展示 1</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/073d589c-3c38-42cb-9ce4-821e158a1a12.png" alt="實物展示 2">
+                    <div class="image-info">
+                        <h3>實物展示 2</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/2a84c129-ab7d-4632-a035-5ad78c559387.png" alt="實物展示 3">
+                    <div class="image-info">
+                        <h3>實物展示 3</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/3a98e74c-22bf-45ab-ba78-8b465daf7747.png" alt="實物展示 4">
+                    <div class="image-info">
+                        <h3>實物展示 4</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/4e39ba31-795f-4f31-b098-35a5069bd7c9.png" alt="實物展示 5">
+                    <div class="image-info">
+                        <h3>實物展示 5</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/5d9bb79f-1375-4e7b-b438-10a9a602264c.png" alt="實物展示 6">
+                    <div class="image-info">
+                        <h3>實物展示 6</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/6v02d1uv.png" alt="實物展示 7">
+                    <div class="image-info">
+                        <h3>實物展示 7</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/9d943db9-7cd2-4de3-a29b-3aef6c5e4167.png" alt="實物展示 8">
+                    <div class="image-info">
+                        <h3>實物展示 8</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/9ee6b0af-71e3-40f4-ace0-561676b30818.png" alt="實物展示 9">
+                    <div class="image-info">
+                        <h3>實物展示 9</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/63a792e1-7886-48f6-b963-6c97a8f39cca.png" alt="實物展示 10">
+                    <div class="image-info">
+                        <h3>實物展示 10</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/268a38a0-95e5-4dd7-acea-cb95594e3026.png" alt="實物展示 11">
+                    <div class="image-info">
+                        <h3>實物展示 11</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/387a46ee-0006-44ae-b08b-87feeb720246.png" alt="實物展示 12">
+                    <div class="image-info">
+                        <h3>實物展示 12</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/955fcff9-b061-4fbe-af1e-06612a6bb794.png" alt="實物展示 13">
+                    <div class="image-info">
+                        <h3>實物展示 13</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/5542c171-7b2e-4be8-ad35-c1fd871562f1.png" alt="實物展示 14">
+                    <div class="image-info">
+                        <h3>實物展示 14</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/8105d404-6782-427e-b326-b145df3dfc79.png" alt="實物展示 15">
+                    <div class="image-info">
+                        <h3>實物展示 15</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/206758ec-9ee9-4b57-ac1b-8574564a3341.png" alt="實物展示 16">
+                    <div class="image-info">
+                        <h3>實物展示 16</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/a14bb86c-7ad8-4669-bffe-ec15e22ad575.png" alt="實物展示 17">
+                    <div class="image-info">
+                        <h3>實物展示 17</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/b313ec80-cbc0-4db6-92ca-ae2ff01d7bb4.png" alt="實物展示 18">
+                    <div class="image-info">
+                        <h3>實物展示 18</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/b368d451-f2bb-47a9-8e92-cf6b5e0df8f7.png" alt="實物展示 19">
+                    <div class="image-info">
+                        <h3>實物展示 19</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/dd249ee4-bce9-4a3c-a4f0-0dbec055aa0c.png" alt="實物展示 20">
+                    <div class="image-info">
+                        <h3>實物展示 20</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="image/k5gape2r.png" alt="實物展示 21">
+                    <div class="image-info">
+                        <h3>實物展示 21</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2024 LOGO 投票展示 | 所有圖片版權所有</p>
+    </div>
+</body>
+</html>
